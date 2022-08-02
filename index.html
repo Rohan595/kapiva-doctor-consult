@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<title>Doctor Consultation</title>
+</head>
+
+<body>
+    <div class="dc-consultation">
+        <div class="dc-banner">
+            <div class="dc-banner-text">
+                <h2>Want to know the root cause of illness and various imbalances of the body and mind?</h2>
+                <p>Don’t worry, we have got you covered. Kapiva has a team of <br /> experienced Ayurvedic practitioners
+                    andnutritionists who will guide <br /> you at every step to get healthy and fit in a natural way.
+                </p>
+                <p class="green">Get a 100% Private, Free Online Ayurvedic consultation.</p>
+            </div>
+            <div class="dc-banner-img"><img src="" alt="image" /></div>
+        </div>
+        <div class="dc-consultation-form ">
+            <h1>Ayurvedic consultation with experienced doctors and nutritionists</h1>
+            <div class="dc-consultation-form-step-1">
+                <form class="row g-3 needs-validation was-validated" novalidate="">
+                    <h3>Step 1: Personal Details</h3>
+                    <div class="dc-form">
+                        <input type="text" placeholder="Enter your First Name" required />
+                        <input type="text" placeholder="Enter your Last Name" required />
+                        <input type="number" min="1" maxlength="10" placeholder="Enter your Contact" required />
+                        <input type="email" placeholder="Enter your Email" required />
+                    </div>
+                    <div class="dc-whatsapp-tick"><input type="checkbox" id="whatsapp" />
+                        <label for="whatsapp">Get updates on WhatsApp. You may opt out anytime</label>
+                    </div>
+                    <h3>Step 2: Pick your therapy</h3>
+                    <div class="dc-therepys">
+                        <div class="therapy">
+                            <input type="checkbox" onchange="checkData(id)" class="therapy-input" id="Weight Management"
+                                value="Weight Management" />
+                            <label id="therapy-1" for="Weight Management"><img src="./img/weight-management.png"
+                                    alt="Weight Management" />
+                                <p>Weight Management</p>
+                            </label>
+                        </div>
+                        <div class="therapy">
+                            <input type="checkbox" onclick="checkData(id)" class="therapy-input" id="SKIN & HAIR"
+                                value="Skin & Hair" />
+                            <label id="therapy2" for="SKIN & HAIR"><img src="./img/skinhair.png" alt="Skin & Hair" />
+                                <p>SKIN & HAIR</p>
+                            </label>
+                        </div>
+                        <div class="therapy">
+                            <input type="checkbox" class="therapy-input" id="SEXUAL WELLNESS" value="SexualWellness"
+                                onclick="checkData(id)" />
+                            <label id="SEXUAL WELLNESS" for="SEXUAL WELLNESS"><img src="./img/sexualwellness.png"
+                                    alt="SexualWellness" />
+                                <p>SEXUAL WELLNESS</p>
+                            </label>
+                        </div>
+                        <div class="therapy">
+                            <input type="checkbox" class="therapy-input" id="LIFESTYLE ISSUES & VITAL ORGANS"
+                                value="Weight Management" />
+                            <label id="LIFESTYLE ISSUES & VITAL ORGANS" for="LIFESTYLE ISSUES & VITAL ORGANS"><img
+                                    src="./img/lifestyle.png" alt="Weight Management" />
+                                <p>LIFESTYLE ISSUES & VITAL ORGANS</p>
+                            </label>
+                        </div>
+                        <div class="therapy">
+                            <input type="checkbox" class="therapy-input" id="therapy-1" value="Weight Management" />
+                            <label for="therapy-1"><img src="./img/women-health.png" alt="Weight Management" />
+                                <p>WOMEN’S HEALTH</p>
+                            </label>
+                        </div>
+                        <div class="therapy">
+                            <input type="checkbox" class="therapy-input" id="therapy-1" value="Weight Management" />
+                            <label for="therapy-1"><img src="./img/skinhair.png" alt="Weight Management" />
+                                <p>SKIN & HAIR</p>
+                            </label>
+                        </div>
+                        <div class="therapy">
+                            <input type="checkbox" class="therapy-input" id="therapy-1" value="Weight Management" />
+                            <label for="therapy-1"><img src="./img/lifestyle.png" alt="Weight Management" />
+                                <p>LIFESTYLE ISSUES & VITAL ORGANS</p>
+                            </label>
+                        </div>
+                        <div class="therapy">
+                            <input type="checkbox" class="therapy-input" id="therapy-1" value="Weight Management" />
+                            <label for="therapy-1"><img src="./img/lifestyle.png" alt="Weight Management" />
+                                <p>LIFESTYLE ISSUES & VITAL ORGANS</p>
+                            </label>
+                        </div>
+                    </div>
+                    <h3>Tell us more about your concern</h3>
+                    <input type="text" id="concern" placeholder="Optional" required />
+                    <h3>Step 2: Pick your therapy</h3>
+                    <div class="dc-form">
+                        <div class="date">
+                            <label for="date">Select a Date</label>
+                            <input type="date" id="date" placeholder="Enter your First Name" required />
+                        </div>
+                        <div class="time"> <label for="date">Select a Date</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="dc-form-submit"><input type="Submit" name="submit" value="SUBMIT" /></div>
+            </div>
+        </div>
+        <div class="dc-doctor-details">
+            <h3>MEET OUR TEAM OF EMPANELLED <br />
+                <span style="font-weight: 800;">AYURVEDIC DOCTORS</span>
+            </h3>
+            <div class="dc-doctor-cards">
+                <div class="dc-card">
+                    <div class="doctor-image"> <img src="./img/image.png" alt="Doctor Image" /></div>
+                    <h2 class="doctor-name">Dr. Anand R Dwivedi</h2>
+                    <p class="doctor-detail">Ayurvedacharya, Mumbai University, 1987.
+                    <div class="doctor-experience">
+                        <p><span class="green">Years of Experience</span>: 34 Yrs</p>
+                        <p><span class="green">Specialization</span>: Diabetes, Skin & Hair</p>
+                        <p><span class="green">Languages</span>: Hindi, English & Marathi</p>
+                    </div>
+                    </p>
+                    <p class="doctor-info">Dr. Anand R Dwivedi has been practicing Ayurveda since 1988. He has a special
+                        interest in the treatment of chronic illnesses with the help of Ayurveda. He has been associated
+                        with Kapiva since 2015, helping people lead a well-balanced lifestyle through his deep knowledge
+                        of Ayurveda.</p>
+                </div>
+                <div class="dc-card">
+                    <div class="doctor-image"> <img src="./img/image.png" alt="Doctor Image" /></div>
+                    <h2 class="doctor-name">Dr. Anand R Dwivedi</h2>
+                    <p class="doctor-detail">Ayurvedacharya, Mumbai University, 1987.
+                    <div class="doctor-experience">
+                        <p><span class="green">Years of Experience</span>: 34 Yrs</p>
+                        <p><span class="green">Specialization</span>: Diabetes, Skin & Hair</p>
+                        <p><span class="green">Languages</span>: Hindi, English & Marathi</p>
+                    </div>
+                    </p>
+                    <p class="doctor-info">Dr. Anand R Dwivedi has been practicing Ayurveda since 1988. He has a special
+                        interest in the treatment of chronic illnesses with the help of Ayurveda. He has been associated
+                        with Kapiva since 2015, helping people lead a well-balanced lifestyle through his deep knowledge
+                        of Ayurveda.</p>
+                </div>
+                <div class="dc-card">
+                    <div class="doctor-image"> <img src="./img/image.png" alt="Doctor Image" /></div>
+                    <h2 class="doctor-name">Dr. Anand R Dwivedi</h2>
+                    <p class="doctor-detail">Ayurvedacharya, Mumbai University, 1987.
+                    <div class="doctor-experience">
+                        <p><span class="green">Years of Experience</span>: 34 Yrs</p>
+                        <p><span class="green">Specialization</span>: Diabetes, Skin & Hair</p>
+                        <p><span class="green">Languages</span>: Hindi, English & Marathi</p>
+                    </div>
+                    </p>
+                    <p class="doctor-info">Dr. Anand R Dwivedi has been practicing Ayurveda since 1988. He has a special
+                        interest in the treatment of chronic illnesses with the help of Ayurveda. He has been associated
+                        with Kapiva since 2015, helping people lead a well-balanced lifestyle through his deep knowledge
+                        of Ayurveda.</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="dc-acheivement-head">Our empanelled doctors have treated thousands of patients with:</h3>
+        <div class="dc-acheivements">
+            <div class="acheiventent">
+                <div class="acheivement-img"><img src="./img/diabities.png" alt="" /></div>
+                <p class="acheivement-description"><span class="bold">Diabetes</span> treated by <br /> Dr. Sheetal
+                    Verma</p>
+            </div>
+            <div class="acheiventent">
+                <div class="acheivement-img"><img src="./img/skin-hair.png" alt="" /></div>
+                <p class="acheivement-description"><span class="bold">Diabetes</span> treated by <br /> Dr. Sheetal
+                    Verma</p>
+            </div>
+            <div class="acheiventent">
+                <div class="acheivement-img"><img src="./img/obesity.png" alt="" /></div>
+                <p class="acheivement-description"><span class="bold">Diabetes</span> treated by <br /> Dr. Sheetal
+                    Verma</p>
+            </div>
+            <div class="acheiventent">
+                <div class="acheivement-img"><img src="./img/pocs.png" alt="" /></div>
+                <p class="acheivement-description"><span class="bold">Diabetes</span> treated by <br /> Dr. Sheetal
+                    Verma</p>
+            </div>
+        </div>
+        <div class="dc-book-consulation">
+            <button class="btn-book">
+                <div class="btn-initial">
+                    <div class="btn-image"><img src="./img/dc-consult.png" alt="" /></div>
+                    <p class="btn-text">BOOK A FREE CONSULTATION</p>
+                </div>
+                <div class="btn-secondary"> <img src="./img/right-arrow.png" alt="" /></div>
+            </button>
+        </div>
+        <h3 class="dc-acheivement-head">Get the right treatment after an analysis of the root cause of your problems
+        </h3>
+        <div class="dc-treatments">
+            <div class="treatment">
+                <img src="./img/ayruvedic.png" alt="">
+                <p class="treatment-text">Years of Ayurvedic experience</p>
+            </div>
+            <div class="treatment">
+                <img src="./img/consultation.png" alt="">
+                <p class="treatment-text">Years of Ayurvedic experience</p>
+            </div>
+            <div class="treatment">
+                <img src="./img/treatment.png" alt="">
+                <p class="treatment-text">Years of Ayurvedic experience</p>
+            </div>
+            <div class="treatment">
+                <img src="./img/doctors.png" alt="">
+                <p class="treatment-text">Years of Ayurvedic experience</p>
+            </div>
+        </div>
+        <div class="dc-consult-queries">
+            <h3 class="dc-consult-head">Still not very clear with whom you need to consult?</h3>
+            <p>Don’t worry, take this small online test to understand which consultation will benefit you.</p>
+            <p class="green">Get a 100% Private and Free Online Test.</p>
+            <div class="faq">
+                <p>ONLINE AYURVEDIC CONSULTATION <br />
+                    <span class="bold">FAQs</span>
+                </p>
+            </div>
+            <p>Feel free to connect with us if you have any questions which are not covered in the FAQs below.</p>
+            <p class="green unl">
+                Click Here - I have a question
+            </p>
+
+        </div>
+        <div class="dc-selector">
+            <div class="review">
+                <p class="question" id="review-1" onclick="dropdown(id)">What are the online Ayurvedic consultation
+                    charges?</p>
+                <p class="answer" id="1">It is completely Free, there are no charges for your online Ayurvedic
+                    Consultation at
+                    Kapiva. </p>
+            </div>
+            <div class="review">
+                <p class="question" id="review-2" onclick="dropdown(id)">What are the online Ayurvedic consultation
+                    charges?</p>
+                <p class="answer" id="2">It is completely Free, there are no charges for your online Ayurvedic
+                    Consultation at
+                    Kapiva. </p>
+            </div>
+            <div class="review">
+                <p class="question" id="review-3" onclick="dropdown(id)">What are the online Ayurvedic consultation
+                    charges?</p>
+                <p class="answer" id="3">It is completely Free, there are no charges for your online Ayurvedic
+                    Consultation at
+                    Kapiva. </p>
+            </div>
+        </div>
+        <div class="dc-why-kapiva">
+            <h3 class="why-head">WHY <span class="bold">KAPIVA AYURVEDA?</span></h3>
+            <p>Kapiva has a team of experienced Ayurvedic practitioners and nutritionists who will guide you at
+                every<br />
+                step to get healthy and fit in a natural way.</p>
+            <div class="dc-treatments">
+                <div class="treatment">
+                    <img src="./img/customers.png" alt="">
+                    <p class="treatment-text">Satisfied customers</p>
+                </div>
+                <div class="treatment">
+                    <img src="./img/delivered.png" alt="">
+                    <p class="treatment-text">Orders delivered</p>
+                </div>
+                <div class="treatment">
+                    <img src="./img/cities.png" alt="">
+                    <p class="treatment-text">Cities supplied</p>
+                </div>
+                <div class="treatment">
+                    <img src="./img/categories.png" alt="">
+                    <p class="treatment-text">Categories served</p>
+                </div>
+            </div>
+        </div>
+        <div class="dc-book-consulation">
+            <button class="btn-book">
+                <div class="btn-initial">
+                    <div class="btn-image"><img src="./img/dc-consult.png" alt="" /></div>
+                    <p class="btn-text">BOOK A FREE CONSULTATION</p>
+                </div>
+                <div class="btn-secondary"> <img src="./img/right-arrow.png" alt="" /></div>
+            </button>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    count = 0
+    var dropdown = (id) => {
+        var qa = id.split("-")[1]
+        count += 1
+        if (count % 2 == 0) {
+            document.getElementById(qa).style.display = "block"
+            document.getElementById(`review-${qa}`).style.backgroundImage = " url('./img/up-arrow.png') "
+        }
+        else {
+            document.getElementById(qa).style.display = "none"
+            document.getElementById(`review-${qa}`).style.backgroundImage = " url('./img/down-arrow.png') "
+        }
+    }
+
+    var checkData = (id) => {
+        var checkbox = document.getElementById(id)
+        console.log(id)
+        if (checkbox.checked) {
+            document.getElementById("therapy-1").style.border = "3px solid #80a03c"
+            document.getElementById(id).style.display = "block"
+            document.getElementById(id).style.accentColor = "#80a03c"
+        }
+        else {
+            document.getElementById("therapy-1").style.border = "1px solid black"
+            document.getElementById(id).style.display = "none"
+        }
+    }
+</script>
+
+</html>
