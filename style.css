@@ -142,6 +142,7 @@ input.therapy-input {
   z-index: 2;
   right: 0;
   zoom: 1.3;
+  display: none;
 }
 
 .dc-therepys .input [type="checkbox"]::-ms-check {
@@ -151,19 +152,21 @@ input.therapy-input {
 .dc-therepys label {
   border: 1px solid;
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
   align-items: center;
 }
 
 .dc-therepys img {
-  width: 23%;
-  height: 46%;
-  margin: 0 5.5%;
+  width: 30%;
+  height: 70%;
   align-self: center;
 }
 .dc-therepys p {
+  width: 35%;
   margin: 4% 0%;
+  font-size: 0.8rem;
 }
 
 input#date {
